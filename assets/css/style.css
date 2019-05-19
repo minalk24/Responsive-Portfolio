@@ -216,9 +216,26 @@ input[type=submit] {
   border: 0 none;
 }
 
+/*layout for max width 980 */
 @media only screen and (max-width: 980px) {
   body {
-    background-color: lightblue;
+    margin:0 auto;
+  }
+  .auth-image {
+  	float: none;
+  	width: 100%;
+    height: auto;
+  }
+  .work {
+    float: none;
+    width: 100%;
+  }
+  .work:nth-child(even) {
+    margin-right: 40px;
+  }
+  #contact-form ul{
+    list-style-type: none;
+    padding: 0px;
   }
 }
 
