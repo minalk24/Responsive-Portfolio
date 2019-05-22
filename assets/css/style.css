@@ -284,6 +284,13 @@ input[type=submit] {
 
 /*layout for max width 980 */
 @media only screen and (max-width: 980px) {
-
+  .main-section {
+    width: 60%;
+  }
+  #masthead {
+   width: 100%;
+  }
+  #logo {
+  width: 100%;
+  }
 }
-
