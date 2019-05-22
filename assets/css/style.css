@@ -55,8 +55,8 @@ h3 {
 #masthead {
   position: fixed;
   z-index: 99;
-  width: 100%;
-  margin: 0 0 30px;
+  width: 99%;
+  /* margin: 0 0 30px; */
   overflow: auto;
   color: #ffffff;
   background: #ffffff;
@@ -99,7 +99,7 @@ nav a:first-child {
 /* footer */
 
 footer {
-  padding: 30px 0;
+  /* padding: 30px 0; */
   clear: both;
   font-size: 12px;
   color: #ffffff;
@@ -107,7 +107,7 @@ footer {
   text-align: center;
   background: #666666;
   border-top: 8px solid #4aaaa5;
-  height: 50px;
+  line-height: 50px;
 }
 
 h3, h2 {
@@ -180,6 +180,7 @@ h3, h2 {
 
 #contact-form ul {
   margin-bottom: 20px;
+  list-style-type: none;
 }
 
 #contact-form li {
@@ -216,106 +217,35 @@ input[type=submit] {
   border: 0 none;
 }
 
-/*layout for max width 980 */
-@media only screen and (max-width: 980px) {
-  body {
-    margin:0 auto;
-  }
-  .auth-image {
-  	float: none;
-  	width: 100%;
-    height: auto;
-  }
-  .work {
-    float: none;
-    width: 100%;
-  }
-  .work:nth-child(even) {
-    margin-right: 40px;
-  }
-  #contact-form ul{
-    list-style-type: none;
-    padding: 0px;
-  }
-}
-
-/*layout for max width 768 */
-@media only screen and (max-width: 768px) {
-
-  /*header */
-  nav{
-    margin-right: 35px;
-  }
-  
-  #logo{
-    margin-left: 20px;
-  }
-
-  /*main section */
-  .main-section h1{
-    margin-top:0px;
-  }
-
-  .main-section{
-    clear:both;
-    margin:0px 20px 40px 20px;
-    max-width:710px;
-  }
-
-/*portfolio page */
-  .work{
-    margin:20px 0px 10px;
-    width:300px;
-  }
-
-  #contact-form ul{
-    list-style-type: none;
-    padding-left: 0px;
-  }
-}
 
 /*layout for max width 640 */
 @media only screen and (max-width: 640px) {
-  /*header */
-  #masthead {
-    position: static;
-  }
 
-  .container{
-    clear: both;
-  }
+  /*header */
+  
   #logo{
     margin-left: 0px;
-    width:100%;
+    width:100%; 
   }
-
-  #logo nav{
-    width:100%;
-  }
-
   #responsive-nav{
-    position: static;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 4%;
-    clear: both;
-    height: 30px;
+    width: 300px;
+    margin: 0 auto;
+    float:none;
   }
-
+  #main-container{
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+  }
   /*main section */
   .auth-image{
     width: 100%;
     margin-bottom: 10px;
   }
 
-  #main-container {
-    padding-top: 0px;
-  }
-
   .main-section{
     clear: both;
-    width:590px;
+    width:100%;
     padding-top:0px 15px 30px 15px;
   }
 
@@ -327,6 +257,21 @@ input[type=submit] {
     width: 100%;
     margin-bottom: 15px;
   }
+/* contact page */
+  #contact-form ul{
+    list-style-type: none;
+    padding: 0px;
+  }
   
+}
+
+/*layout for max width 768 */
+@media only screen and (max-width: 768px) {
+
+}
+
+/*layout for max width 980 */
+@media only screen and (max-width: 980px) {
+
 }
 
