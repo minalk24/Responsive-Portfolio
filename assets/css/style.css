@@ -266,8 +266,20 @@ input[type=submit] {
 }
 
 /*layout for max width 768 */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px){
+  #responsive-nav{
+    margin-right:15px;
+}
 
+/*portfolio page */
+.work{
+  margin:0 auto;
+  width:300px;
+  float: right;
+  display:inline-block;
+}
+.work:nth-child(even) {
+  float:none;
 }
 
 /*layout for max width 980 */
